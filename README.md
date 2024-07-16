@@ -1,1 +1,2 @@
-# Retero Snake
+# Snake Game
+
