@@ -8,10 +8,30 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="flex h-screen justify-center items-center">
     
-    <h1 class="text-4xl font-extrabold tracking-widest">Hello World!</h1>
-    <h1 class="text-4xl font-extrabold tracking-widest">012314</h1>
+    <div class="game-container">
+        <div class="scores flex justify-between text-3xl mx-2">
+            <div class="score" id="score">000</div>
+            <div class="high-score" id="high-score">000</div>
+        </div>
+
+        <div class="board-container">
+            <div class="game-border-1">
+                <div class="game-border-2">
+                    <div class="game-border-3">
+                        <div class="game-board grid" id="game-board"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="home-screen flex flex-col items-center w-full">
+                <img class="logo-img" src="assets/snake-game-ai-gen.png" alt="game-logo">
+                <div class="instructions text-xl font-bold tracking-wider" id="instruction-text">Press "spacebar" to start the game</div>
+            </div>
+        </div>
+    </div>
+
 
     <script src="app.js"></script>
 </body>
